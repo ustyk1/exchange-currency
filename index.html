@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Курс Валют</title>
+</head>
+<body>
+  <h1>exchange rates private bank</h1>
+  <table class="table exchange-rates">
+    <thead class="table__head">
+      <tr>
+        <th>Сurrency</th>
+        <th>Base Сurrency</th>
+        <th>Buy</th>
+        <th>Sale</th>
+      </tr>
+    </thead>
+    <tbody class="table__body"></tbody>
+  </table>
+
+  <button class="button button_get-more" >Get more</button>
+  <button class="button button_close">Close</button>
+  <table class="table exchange-rates_additionally">
+    <thead class="table__head">
+      <tr>
+        <th>Сurrency</th>
+        <th>Base Сurrency</th>
+        <th>Sale Rate NB</th>
+        <th>Purchase Rate NB</th>
+        <th>Sale Rate</th>
+        <th>Purchase Rate</th>
+      </tr>
+    </thead>
+    <tbody class="table__body "></tbody>
+  </table>
+
+  <form action="#" class="convector">
+    <div class="convector__item">
+      <label for="baseCurrency">Base currency 
+        <input class="input" type="text" name="baseCurrencyInp" id="baseCurrency" autocomplete="off">
+      </label>
+      <select class="convector-form__baseCurrency" name="baseCurrencySelect">
+        <option value="UA">UA</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="CAD" data-optinal="true">CAD</option>
+        <option value="CZK" data-optinal="true">CZK</option>
+        <option value="ILS" data-optinal="true">ILS</option>
+        <option value="JPY" data-optinal="true">JPY</option>
+        <option value="NOK" data-optinal="true">NOK</option>
+        <option value="CHF" data-optinal="true">CHF</option>
+        <option value="GBP" data-optinal="true">GBP</option>
+        <option value="PLZ" data-optinal="true">PLZ</option>
+      </select>
+      <p>Target currency</p>
+      <select class="convector-form__targetCurrency" name="targetCurrencySelect">
+        <option value="UA">UA</option>
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+        <option value="CAD" data-optinal="true">CAD</option>
+        <option value="CZK" data-optinal="true">CZK</option>
+        <option value="ILS" data-optinal="true">ILS</option>
+        <option value="JPY" data-optinal="true">JPY</option>
+        <option value="NOK" data-optinal="true">NOK</option>
+        <option value="CHF" data-optinal="true">CHF</option>
+        <option value="GBP" data-optinal="true">GBP</option>
+        <option value="PLZ" data-optinal="true">PLZ</option>
+      </select>
+    </div>
+    <button type="submit" class="get-money" disabled>Get money</button>
+  </form>
+  <p class="result"></p>
+
+  <script src="./assets/scripts/script.js"></script>
+</body>
+</html>

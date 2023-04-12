@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: #105469;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1 {
+  color: #f9c22a;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+table {
+  background: #012B39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+}
+
+.table__body {
+  height: 100%;
+}
+
+th {
+  border-bottom: 1px solid #364043;
+  color: #f9c22a;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4F5F64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #014055;
+}
+button {
+  color: #f9c22a;
+  background: #012B39;
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.table.exchange-rates_additionally {
+  display: none;
+}
+
+button:disabled {
+  background-color: #014055a9;
+  scale: 0.95;
+}
+
+.button_close {
+  display: none;
+}
+
+form {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.input {
+  width: 100px;
+  background-color: transparent;
+}
+
+.convector__item {
+  display: flex;
+  gap: 20px;
+}
